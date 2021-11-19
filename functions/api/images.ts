@@ -44,7 +44,7 @@ export const onRequestGet: PagesFunction<{
             );
             // This isn't a real internet request, so the host is irrelevant (https://developers.cloudflare.com/workers/platform/compatibility-dates#durable-object-stubfetch-requires-a-full-url).
             const downloadCountResponse = await downloadCounter.fetch(
-              "https://images.pages.dev/"
+              "https://badjiezhang.pages.dev/"
             );
             const downloadCount = await downloadCountResponse.json<number>();
 

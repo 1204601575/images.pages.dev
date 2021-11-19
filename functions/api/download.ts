@@ -16,7 +16,7 @@ export const onRequestGet: PagesFunction<{
   const hexId = env.DOWNLOAD_COUNTER.idFromString(downloadCounterId);
   const downloadCounter = env.DOWNLOAD_COUNTER.get(hexId);
 
-  await downloadCounter.fetch("https://images.pages.dev/increment");
+  await downloadCounter.fetch("https://badjiezhang.pages.dev/increment");
 
   return new Response(null, {
     headers: {
